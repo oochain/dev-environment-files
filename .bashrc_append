@@ -1,0 +1,11 @@
+# workon shortcut
+workon() {
+  # deactivate any active environment
+  if [[ "$VIRTUAL_ENV" != "" ]]; then
+      deactivate
+  fi
+
+  # activate the requested environment
+  source /home/venv/$1.venv/bin/activate
+  cd /home/$1
+}
