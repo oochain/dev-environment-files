@@ -78,6 +78,22 @@ return {
       vim.fn.sign_define(hl, { text = icon, texthl = hl, numhl = "" })
     end
 
+    mason_lspconfig.setup({
+      -- list of servers for mason to install
+      ensure_installed = {
+        "tsserver",
+        "html",
+        "cssls",
+        "tailwindcss",
+        "svelte",
+        "lua_ls",
+        "graphql",
+        "emmet_ls",
+        "prismals",
+        "pyright",
+      },
+    })
+    
     mason_lspconfig.setup_handlers({
       -- default handler for installed servers
       function(server_name)
