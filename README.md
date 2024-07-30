@@ -4,6 +4,14 @@
 
 📹 Youtube Playlist With Detailed Walkthroughs on My Setup: [💻 My Dev Environment & Workflow](https://youtube.com/playlist?list=PLnu5gT9QrFg36OehOdECFvxFFeMHhb_07)
 
+# Ubuntu Setup
+
+Install the requirements and copy the configurations over
+
+`sudo apt update && sudo apt install vim neovim fd-find ripgrep npm`
+`cp -R .config/nvim ~/.config/`
+`cp .tmux.conf ~/`
+
 # Terminal Setup
 
 After recommendations from you guys, I've swapped out Alacritty for [WezTerm](https://wezfurlong.org/wezterm/index.html)!
