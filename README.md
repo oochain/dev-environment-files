@@ -9,7 +9,9 @@
 Install the requirements and copy the configurations over
 
 `sudo apt update && sudo apt install vim neovim fd-find ripgrep npm`
+
 `cp -R .config/nvim ~/.config/`
+
 `cp .tmux.conf ~/`
 
 # Terminal Setup
