@@ -12,20 +12,16 @@ return {
         typescriptreact = { "prettier" },
         svelte = { "prettier" },
         css = { "prettier" },
-        html = { "prettier" },
+        html = { "prettier --print-width 150"},
         json = { "prettier" },
         yaml = { "prettier" },
         markdown = { "prettier" },
         graphql = { "prettier" },
         liquid = { "prettier" },
         lua = { "stylua" },
-        python = { "isort", "black" },
+        python = { "isort --line-length 150", "black --line-length 150" },
       },
-      format_on_save = {
-        lsp_fallback = false,
-        async = false,
-        timeout_ms = 2000,
-      },
+      format_on_save = false,
     })
 
     vim.keymap.set({ "n", "v" }, "<leader>mp", function()
