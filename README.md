@@ -8,7 +8,7 @@
 
 Install the requirements and copy the configurations over
 
-`sudo apt update && sudo apt install vim neovim fd-find ripgrep npm`
+`sudo apt update && sudo apt install vim neovim fd-find ripgrep npm unzip`
 
 `cp -R .config/nvim ~/.config/`
 
