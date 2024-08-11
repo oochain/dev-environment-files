@@ -81,6 +81,7 @@ return {
     mason_lspconfig.setup({
       -- list of servers for mason to install
       ensure_installed = {
+        "bashls",
         "tsserver",
         "html",
         "cssls",
@@ -93,7 +94,7 @@ return {
         "pyright",
       },
     })
-    
+
     mason_lspconfig.setup_handlers({
       -- default handler for installed servers
       function(server_name)

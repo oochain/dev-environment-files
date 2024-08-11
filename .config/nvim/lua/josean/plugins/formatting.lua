@@ -22,7 +22,7 @@ return {
         python = { "isort --line-length 150", "black --line-length 150" },
         terraform = {"terraform_fmt"},
       },
-      format_on_save = false,
+      -- format_on_save = true,
     })
 
     vim.keymap.set({ "n", "v" }, "<leader>mp", function()
